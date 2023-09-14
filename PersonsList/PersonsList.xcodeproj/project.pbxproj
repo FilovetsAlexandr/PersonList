@@ -14,6 +14,8 @@
 		F4462B7E2AB1CC4400A1508E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4462B7C2AB1CC4400A1508E /* LaunchScreen.storyboard */; };
 		F4462B892AB1D41800A1508E /* PersonsListFirstPageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4462B882AB1D41800A1508E /* PersonsListFirstPageTVC.swift */; };
 		F4462B8B2AB1D46200A1508E /* PersonsListSecondPageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4462B8A2AB1D46200A1508E /* PersonsListSecondPageTVC.swift */; };
+		F4462B8E2AB1F66500A1508E /* PersonsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4462B8D2AB1F66500A1508E /* PersonsTVC.swift */; };
+		F4462B912AB1FA7A00A1508E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4462B902AB1FA7A00A1508E /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		F4462B7F2AB1CC4400A1508E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4462B882AB1D41800A1508E /* PersonsListFirstPageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListFirstPageTVC.swift; sourceTree = "<group>"; };
 		F4462B8A2AB1D46200A1508E /* PersonsListSecondPageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListSecondPageTVC.swift; sourceTree = "<group>"; };
+		F4462B8D2AB1F66500A1508E /* PersonsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsTVC.swift; sourceTree = "<group>"; };
+		F4462B902AB1FA7A00A1508E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		F4462B702AB1CC4200A1508E /* PersonsList */ = {
 			isa = PBXGroup;
 			children = (
+				F4462B8F2AB1FA1F00A1508E /* PersonCell */,
+				F4462B8C2AB1F61B00A1508E /* Persons */,
 				F4462B862AB1CF2C00A1508E /* Controllers */,
 				F4462B852AB1CC9300A1508E /* Delegates */,
 				F4462B872AB1D38200A1508E /* Views */,
@@ -92,6 +98,22 @@
 				F4462B7C2AB1CC4400A1508E /* LaunchScreen.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F4462B8C2AB1F61B00A1508E /* Persons */ = {
+			isa = PBXGroup;
+			children = (
+				F4462B8D2AB1F66500A1508E /* PersonsTVC.swift */,
+			);
+			path = Persons;
+			sourceTree = "<group>";
+		};
+		F4462B8F2AB1FA1F00A1508E /* PersonCell */ = {
+			isa = PBXGroup;
+			children = (
+				F4462B902AB1FA7A00A1508E /* TableViewCell.swift */,
+			);
+			path = PersonCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4462B722AB1CC4200A1508E /* AppDelegate.swift in Sources */,
+				F4462B8E2AB1F66500A1508E /* PersonsTVC.swift in Sources */,
 				F4462B8B2AB1D46200A1508E /* PersonsListSecondPageTVC.swift in Sources */,
+				F4462B912AB1FA7A00A1508E /* TableViewCell.swift in Sources */,
 				F4462B742AB1CC4200A1508E /* SceneDelegate.swift in Sources */,
 				F4462B892AB1D41800A1508E /* PersonsListFirstPageTVC.swift in Sources */,
 			);
