@@ -13,8 +13,7 @@ class PersonsTVC {
     private static var names = ["Alexandr", "Sergey", "Ilya", "Evgeny", "Valeryia", "Vadim", "Zhenya", "Roman", "Anastasiya", "Gleb"]
     private static var surnames = ["Filovets", "Loyko", "Ruppel", "Pugachev", "Ignatinko", "Anderson", "Wilson", "Clark", "Walker", "Hall"]
     // получаем 10 персон
-    static func getPersons() -> [Person] {
-        persons = []
+    static func getPersons() {
         names.shuffle()
         surnames.shuffle()
         for i in 0...9 {
@@ -24,7 +23,6 @@ class PersonsTVC {
             let person = Person(name: "\(names[i]) \(surnames[i])", email: randomEmail, phoneNumber: randomPhoneNumber)
             persons.append(person)
         }
-        return persons
     }
 
     // случайный Email
