@@ -16,6 +16,7 @@
 		F4462B8B2AB1D46200A1508E /* PersonsListSecondPageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4462B8A2AB1D46200A1508E /* PersonsListSecondPageTVC.swift */; };
 		F4462B8E2AB1F66500A1508E /* PersonsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4462B8D2AB1F66500A1508E /* PersonsTVC.swift */; };
 		F4462B912AB1FA7A00A1508E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4462B902AB1FA7A00A1508E /* TableViewCell.swift */; };
+		F4EB7C6A2AB8D2A800113039 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB7C692AB8D2A800113039 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F4462B8A2AB1D46200A1508E /* PersonsListSecondPageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListSecondPageTVC.swift; sourceTree = "<group>"; };
 		F4462B8D2AB1F66500A1508E /* PersonsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsTVC.swift; sourceTree = "<group>"; };
 		F4462B902AB1FA7A00A1508E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F4EB7C692AB8D2A800113039 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				F4462B882AB1D41800A1508E /* PersonsListFirstPageTVC.swift */,
 				F4462B8A2AB1D46200A1508E /* PersonsListSecondPageTVC.swift */,
+				F4EB7C692AB8D2A800113039 /* DetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				F4462B8E2AB1F66500A1508E /* PersonsTVC.swift in Sources */,
 				F4462B8B2AB1D46200A1508E /* PersonsListSecondPageTVC.swift in Sources */,
 				F4462B912AB1FA7A00A1508E /* TableViewCell.swift in Sources */,
+				F4EB7C6A2AB8D2A800113039 /* DetailsViewController.swift in Sources */,
 				F4462B742AB1CC4200A1508E /* SceneDelegate.swift in Sources */,
 				F4462B892AB1D41800A1508E /* PersonsListFirstPageTVC.swift in Sources */,
 			);
