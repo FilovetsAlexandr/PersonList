@@ -1,6 +1,6 @@
 import UIKit
 
-class PersonsTVC {
+final class PersonsTVC {
     struct Person {
         var name: String
         var email: String

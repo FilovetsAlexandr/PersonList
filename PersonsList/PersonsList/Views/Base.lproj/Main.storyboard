@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,11 +44,93 @@
                             <outlet property="delegate" destination="gZG-J2-ejG" id="Aes-JE-W44"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="uRi-7V-DJ3"/>
+                    <navigationItem key="navigationItem" id="uRi-7V-DJ3">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="eGz-pA-5nH">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="0tf-MF-e0u">
+                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Edit"/>
+                                <connections>
+                                    <action selector="editButtonTapped:" destination="gZG-J2-ejG" eventType="touchUpInside" id="CCe-dm-m2F"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="buttonUI" destination="0tf-MF-e0u" id="k7S-Ea-cUY"/>
+                        <segue destination="B5a-FX-ioa" kind="show" identifier="DetailsViewController" id="9cD-pk-zM3"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOY-Xd-67f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1736.6412213740457" y="-445.07042253521126"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="VNu-jk-aUd">
+            <objects>
+                <viewController id="B5a-FX-ioa" customClass="DetailsViewController" customModule="PersonsList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Sq-Ao-jId">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="j92-eX-9gr">
+                                <rect key="frame" x="25" y="160" width="343" height="58.333333333333343"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="uha-l3-xla">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="21.666666666666668"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emai: " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ul4-mb-m3b">
+                                                <rect key="frame" x="0.0" y="0.0" width="170.66666666666666" height="21.666666666666668"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHT-v5-4LR">
+                                                <rect key="frame" x="172.66666666666663" y="0.0" width="170.33333333333337" height="21.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="LlG-Ih-zwH">
+                                        <rect key="frame" x="0.0" y="36.666666666666657" width="343" height="21.666666666666671"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone: " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3o-S2-x6m">
+                                                <rect key="frame" x="0.0" y="0.0" width="170.66666666666666" height="21.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btG-BW-mAY">
+                                                <rect key="frame" x="172.66666666666663" y="0.0" width="170.33333333333337" height="21.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l9k-EO-62p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j92-eX-9gr" firstAttribute="leading" secondItem="l9k-EO-62p" secondAttribute="leading" constant="25" id="Tz3-GW-J4K"/>
+                            <constraint firstItem="l9k-EO-62p" firstAttribute="trailing" secondItem="j92-eX-9gr" secondAttribute="trailing" constant="25" id="bcT-lw-xbz"/>
+                            <constraint firstItem="j92-eX-9gr" firstAttribute="top" secondItem="l9k-EO-62p" secondAttribute="top" constant="5" id="xu2-xN-VM2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SSD-D4-z5s"/>
+                    <connections>
+                        <outlet property="detailsEmailLbl" destination="FHT-v5-4LR" id="uoh-SX-tJP"/>
+                        <outlet property="detailsPhoneLbl" destination="btG-BW-mAY" id="eoE-2V-Zrr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1FH-Hc-z3N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2472.5190839694656" y="-445.07042253521126"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dBD-hl-TJ1">
